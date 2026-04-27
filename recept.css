@@ -1,10 +1,23 @@
 /*html style*/
 html {
-  background-color: #A10000;
+  background-color: rgba(161, 0, 0, 0.3);
+;
 }
 
 /**Body style*/
 
 body {
   background-color: #FFFFFF;
+  color:#000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*P style under titel*/
+p.grey {
+  background-color: #EBEBEB;
+}
+
+/*h styles*/
+h1 {
+    color: #A10000;
 }
