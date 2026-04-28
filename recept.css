@@ -13,12 +13,13 @@ body {
   color:#000000;
   font-family: 'Open Sans', sans-serif;
   max-width: 1280px;
-  padding: 48px 48px 64px 48px;
+  
   display: flex;
   flex-direction: column;
   gap: 24px;
   
 }
+
 
 /*P style under titel*/
 p.grey {
@@ -34,6 +35,29 @@ h1 {
 }
 
 /*div style*/
+
+.content {
+    padding: 48px 48px 64px 48px;
+}
 div {
     gap: 16px;
+}
+
+/*image styles*/
+.header-image {
+    max-width: 1280 px;
+    min-height: 500px;
+    border: 1px;
+}
+
+.footer-images {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-images img {
+    
+    max-width: 50%;
+    max-height: 516px;
+
 }
