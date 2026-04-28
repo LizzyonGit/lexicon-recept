@@ -1,7 +1,9 @@
 /*html style*/
 html {
   background-color: rgba(161, 0, 0, 0.3);
-;
+  display: flex;
+  justify-content: center;
+
 }
 
 /**Body style*/
@@ -10,14 +12,28 @@ body {
   background-color: #FFFFFF;
   color:#000000;
   font-family: 'Open Sans', sans-serif;
+  max-width: 1280px;
+  padding: 48px 48px 64px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
 }
 
 /*P style under titel*/
 p.grey {
   background-color: #EBEBEB;
+  padding: 16px;
+  gap: 10px;
+  
 }
 
 /*h styles*/
 h1 {
     color: #A10000;
+}
+
+/*div style*/
+div {
+    gap: 16px;
 }
