@@ -1,3 +1,5 @@
+
+
 /*html style*/
 html {
   background-color: rgba(161, 0, 0, 0.3);
@@ -24,6 +26,7 @@ body {
 p.grey {
   background-color: #EBEBEB;
   padding: 16px;
+  margin-bottom: 0px;
   
   
 }
@@ -33,17 +36,42 @@ h1 {
     color: #A10000;
     font-size: 28px;
     font-weight: 700;
+    
+}
+
+h1, h2 {
     padding-top: 0px;
     margin-top: 0px;
+}
+
+.servering-header {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /*div style*/
 
 .content {
     padding: 48px 48px 64px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
     
 }
 
+.content div {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*list styles*/
+ol, ul {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 
 /*image styles*/
 .header-image {
@@ -60,7 +88,7 @@ h1 {
 
 .footer-images img {
     
-    max-width: 48%;
+    max-width: 49%;
     max-height: 516px;
 
 }
