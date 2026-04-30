@@ -17,8 +17,6 @@ body {
   
   display: flex;
   flex-direction: column;
-  
-  
 }
 
 
@@ -26,7 +24,7 @@ body {
 p.grey {
   background-color: #EBEBEB;
   padding: 16px;
-  gap: 10px;
+  
   
 }
 
@@ -43,6 +41,7 @@ h1 {
 
 .content {
     padding: 48px 48px 64px 48px;
+    
 }
 
 
@@ -55,12 +54,13 @@ h1 {
 
 .footer-images {
     display: flex;
+    justify-content: space-between;
     gap: 16px;
 }
 
 .footer-images img {
     
-    max-width: 50%;
+    max-width: 48%;
     max-height: 516px;
 
 }
