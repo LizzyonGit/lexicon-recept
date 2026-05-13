@@ -21,6 +21,10 @@ body {
   flex-direction: column;
 }
 
+/*Header style*/
+header {
+  max-width: 75vw;
+}
 
 /*P style under titel*/
 p.grey {
