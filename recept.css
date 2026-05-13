@@ -54,6 +54,9 @@ h1, h2 {
 
 /*div style*/
 
+.header-content {
+    padding: 48px 48px 0px 48px;
+}
 .content {
     padding: 48px 48px 64px 48px;
     display: flex;
@@ -78,7 +81,7 @@ ol, ul {
 
 /*image styles*/
 .header-image {
-    max-width: 100vw;
+    max-width: 100%;
     
     border: 1px;
 }
