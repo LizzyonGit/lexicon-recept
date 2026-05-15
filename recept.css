@@ -23,7 +23,7 @@ body {
 
 /*Header style*/
 header {
-  max-width: 75vw;
+  max-width: 100%;
 }
 
 /*P style under titel*/
@@ -82,8 +82,10 @@ ol, ul {
 /*image styles*/
 .header-image {
     max-width: 100%;
-    
+    object-fit: cover;
     border: 1px;
+    background-image: url(pannkaka-head.jpg);
+    background-size: cover;
 }
 
 .footer-images {
