@@ -21,6 +21,16 @@ body {
   flex-direction: column;
 }
 
+/*skip link*/
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /*Header style*/
 header {
   max-width: 100%;
@@ -51,6 +61,33 @@ h1, h2 {
 .servering-header {
     padding-bottom: 0px;
 }
+/*nav styles*/
+.navbar ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+
+
+.navbar ul li, .navbar ul li a {
+    padding: 5px;  
+    background-color: #A10000;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navbar ul li {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar ul li a:focus, .navbar ul li a:hover {
+  
+  border: 3px solid chartreuse;
+    
+}
+
 
 /*div style*/
 
