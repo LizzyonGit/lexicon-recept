@@ -86,6 +86,7 @@ ol, ul {
     border: 1px;
     background-image: url(pannkaka-head.jpg);
     background-size: cover;
+    min-height: 300px;
 }
 
 .footer-images {
