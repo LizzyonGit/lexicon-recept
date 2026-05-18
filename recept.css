@@ -1,3 +1,12 @@
+/*CSS variables*/
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    --primary-color: rgba(161, 0, 0, 0.3); /* pink */
+    --secondary-color: #A10000; /* red */
+}
+
+
+
 /*reset*/
 * {
   margin: 0;
@@ -8,7 +17,7 @@
 
 /*html style*/
 html {
-  background-color: rgba(161, 0, 0, 0.3);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -20,9 +29,10 @@ html {
 body {
   background-color: #FFFFFF;
   color:#000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-font);
   max-width: 75vw;
-  
+  font-size: 1rem;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
 }
@@ -62,8 +72,8 @@ p.grey {
 
 /*h styles*/
 h1 {
-    color: #A10000;
-    font-size: 28px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
     font-weight: 700;
     
 }
@@ -72,7 +82,14 @@ h1, h2 {
     padding-bottom: 16px;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
 /*p style*/
+
 section p {
     padding-bottom: 16px;
 }
@@ -89,7 +106,7 @@ section p {
 
 .navbar ul li, .navbar ul li a {
     padding: 5px;  
-    background-color: #A10000;
+    background-color: var(--secondary-color);
     color: #FFFFFF;
     text-decoration: none;
 }
