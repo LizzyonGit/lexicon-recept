@@ -14,11 +14,16 @@
   
 }
 
+/*utility classes*/
+.flex {
+  display: flex;
+}
+
 
 /*html style*/
 html {
   background-color: var(--primary-color);
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   width: 100vw;
 
@@ -33,7 +38,7 @@ body {
   max-width: 75vw;
   font-size: 1rem;
   font-weight: 400;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
 }
 
@@ -96,7 +101,7 @@ section p {
 
 /*nav styles*/
 .navbar ul {
-    display: flex;
+    /*display: flex;*/
     gap: 16px;
     list-style-type: none;
     padding: 5px;
@@ -127,7 +132,7 @@ section p {
 }
 .content {
     
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     gap: 24px;
     
@@ -148,12 +153,13 @@ ul, ol {
     object-fit: cover;
     border: 1px;
     background-image: url(pannkaka-head.jpg);
+    background-color: aqua;
     background-size: cover;
     min-height: 300px;
 }
 
 .footer-images {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-between;
   gap: 16px;
 
