@@ -157,13 +157,9 @@ section p {
 
 .content {
   padding: 48px;
-}
-
-.content {
-    
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    gap: 24px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  gap: 24px;
     
     
 }
