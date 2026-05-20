@@ -19,6 +19,7 @@
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
-
+/*global styles*/
 /*html style*/
 html {
   background-color: var(--primary-color);
@@ -138,16 +139,33 @@ section p {
     background-color: var(--secondary-color);
     color: #FFFFFF;
     text-decoration: none;
+
+
+
+  &:focus,
+  &:focus-visible 
+  &:hover {
+    
+    background-color: contrast-color(var(--secondary-color));
+    color: #000000;
+    
+      
+  }
 }
 
-
-.navbar ul li a:focus, .navbar ul li a:hover {
-  
-  background-color: contrast-color(var(--secondary-color));
-  color: #000000;
+.navbar ul li a:hover, 
+.navbar ul li a:focus,
+.navbar ul li a:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  border-radius: 3px;
+  outline-offset: 0;
     
 }
 
+.navbar ul li{
+  padding-left: 0;
+  padding-right: 0;
+}
 
 /*div style*/
 
