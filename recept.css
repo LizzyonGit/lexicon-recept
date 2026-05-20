@@ -15,6 +15,14 @@
   
 }
 
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
 /*utility classes*/
 .flex {
   display: flex;
@@ -55,6 +63,7 @@ body {
   /*display: flex;*/
   /*flex-direction: column;*/
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 /*skip link*/
