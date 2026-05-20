@@ -181,13 +181,21 @@ ul, ol {
 .footer-images {
   /*display: flex;*/
   /*justify-content: space-between;*/
-  gap: 16px;
+  gap: 24px;
 
-  img {
-    
-    max-width: 49%;
-    max-height: 516px;
+  .image-wrapper {
+    flex: 1;           /* Forces both items to take up equal width */
+    min-width: 0;      /* Crucial: allows the wrapper to shrink below image size */
   }
+  
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      /*max-width: 49%;
+      max-height: 516px;*/
+    }
 
 }
 
