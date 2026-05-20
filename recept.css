@@ -162,6 +162,7 @@ section p {
     
 }
 
+/*this is because the focus ring is inside the padding background otherwise*/
 .navbar ul li{
   padding-left: 0;
   padding-right: 0;
