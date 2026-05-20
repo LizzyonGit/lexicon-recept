@@ -141,9 +141,14 @@ section p {
 
 /*div style*/
 
-.header-content, .content {
+.header-content {
     padding: 48px 48px 0px 48px;
 }
+
+.content {
+  padding: 48px;
+}
+
 .content {
     
     /*display: flex;*/
