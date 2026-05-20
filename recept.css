@@ -83,7 +83,7 @@ header {
 /*P style under titel*/
 p.grey {
   background-color: #EBEBEB;
-  padding: 16px;
+  padding: 1rem;
   
   
   
@@ -98,7 +98,7 @@ h1 {
 }
 
 h1, h2 {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 
 h2 {
@@ -110,21 +110,21 @@ h2 {
 /*p style*/
 
 section p {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 
 /*nav styles*/
 .navbar ul {
     /*display: flex;*/
-    gap: 16px;
+    gap: 1rem;
     list-style-type: none;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 
 
 
 .navbar ul li, .navbar ul li a {
-    padding: 5px;  
+    padding: 0.3125rem;  
     background-color: var(--secondary-color);
     color: #FFFFFF;
     text-decoration: none;
@@ -157,8 +157,8 @@ section p {
 
 /*list styles*/
 ul, ol {
-  margin-left: 16px;
-  padding-left: 8px;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 /*image styles*/
