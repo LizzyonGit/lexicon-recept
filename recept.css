@@ -39,6 +39,7 @@ html {
   /*display: flex;*/
   /*justify-content: center;*/
   width: 100vw;
+  padding-bottom: 64px;
 
 }
 
