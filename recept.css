@@ -138,24 +138,18 @@ section p {
 
 
 
-  /*&:focus,
+  &:focus,
   &:focus-visible, 
-  &:hover*/
-
-  &:has(:hover, :focus, :focus-visible) {
+  &:hover {
     background-color: contrast-color(var(--secondary-color));
     color: #000000;
-    
-      
-  }
+   }
 }
 
-.navbar ul li a:hover, 
-.navbar ul li a:focus,
-.navbar ul li a:focus-visible {
-  outline: 2px solid var(--secondary-color);
-  border-radius: 3px;
-  outline-offset: 0;
+.navbar ul li:has(:hover, :focus, :focus-visible) {
+    outline: 2px solid var(--secondary-color);
+    border-radius: 3px;
+    outline-offset: 0;
     
 }
 
