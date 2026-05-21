@@ -88,15 +88,10 @@ header {
   max-width: 100%;
 }
 
-
-
-
 /*P style under titel*/
 p.grey {
   background-color: #EBEBEB;
   padding: 1rem;
-  
-  
   
 }
 
@@ -104,21 +99,22 @@ p.grey {
 h1 {
     color: var(--secondary-color);
     font-size: 1.8rem;
-    font-weight: 700;
+   
     
 }
 
 h1, h2 {
     padding-bottom: 1rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 700;
+   
     
 }
 
-/*p style*/
+/*p styles*/
 
 section p {
     padding-bottom: 1rem;
@@ -142,10 +138,11 @@ section p {
 
 
 
-  &:focus,
+  /*&:focus,
   &:focus-visible, 
-  &:hover {
-    
+  &:hover*/
+
+  &:has(:hover, :focus, :focus-visible) {
     background-color: contrast-color(var(--secondary-color));
     color: #000000;
     
