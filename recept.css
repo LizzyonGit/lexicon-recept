@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 /*global styles*/
 /*html style*/
 html {
@@ -200,7 +204,7 @@ ul, ol {
   gap: 24px;
 
   .image-wrapper {
-    flex: 1;           /* Forces both items to take up equal width */
+    /*flex: 1;  */         /* Forces both items to take up equal width */
     min-width: 0;      /* Crucial: allows the wrapper to shrink below image size */
   }
   
