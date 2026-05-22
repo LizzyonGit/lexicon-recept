@@ -138,6 +138,7 @@ section p {
 
 .navbar ul li {
   padding: 0.3125rem;
+  border: 1px solid var(--secondary-color);
 }
 
 
