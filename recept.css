@@ -150,10 +150,10 @@ section p {
    }
 }
 
-.navbar ul li:has(:hover, :focus, :focus-visible) {
+.navbar ul li:has(:hover, :focus, :focus-visible, :active) {
     outline: 2px solid var(--secondary-color);
     border-radius: 3px;
-    
+    outline-offset: 0px;
     
 }
 
@@ -188,15 +188,19 @@ ul, ol {
 }
 
 /*image styles*/
-.header-image {
-    max-width: 100%;
+.header-image  {
+  min-height:300px;
+  
+  img {
+    width: 100%;
     object-fit: cover;
     border: 1px;
-    background-image: url(pannkaka-head.jpg);
+    /*background-image: url(pannkaka-head.jpg);
     background-color: aqua;
-    background-size: cover;
-    min-height: 300px;
-}
+    background-size: cover;*/
+    
+    min-height:300px;
+  }}
 
 .footer-images {
   /*display: flex;*/
