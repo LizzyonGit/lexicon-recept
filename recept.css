@@ -200,6 +200,7 @@ ul, ol {
     background-size: cover;*/
     
     min-height:300px;
+    display: block; /* Remove default inline spacing, small white line under*/
   }}
 
 .footer-images {
