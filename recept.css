@@ -125,6 +125,10 @@ section p {
 }
 
 /*nav styles*/
+
+.navbar {
+  padding: 0.315rem;
+}
 .navbar ul {
     /*display: flex;*/
     gap: 1rem;
@@ -153,7 +157,7 @@ section p {
 .navbar ul li:has(:hover, :focus, :focus-visible, :active) {
     outline: 2px solid var(--secondary-color);
     border-radius: 3px;
-    outline-offset: 0px;
+    outline: 0;
     
 }
 
