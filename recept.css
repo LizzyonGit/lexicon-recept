@@ -52,7 +52,7 @@ html {
   /*display: flex;*/
   /*justify-content: center;*/
   /*width: 100vw;*/
-  padding-bottom: 64px;
+  padding-block-end: 64px;
 
 }
 
@@ -108,7 +108,7 @@ h1 {
 }
 
 h1, h2 {
-    padding-bottom: 1rem;
+    padding-block-end: 1rem;
     font-weight: 700;
 }
 
@@ -121,7 +121,7 @@ h2 {
 /*p styles*/
 
 section p {
-    padding-bottom: 1rem;
+    padding-block-end: 1rem;
 }
 
 /*nav styles*/
@@ -177,7 +177,9 @@ section p {
 /*div style*/
 
 .header-content {
-    padding: 48px 48px 0px 48px;
+    /*padding: 48px 48px 0px 48px;*/
+    padding-block: 48px 0px;
+    padding-inline: 48px;
 }
 
 .content {
@@ -193,8 +195,8 @@ section p {
 
 /*list styles*/
 ul, ol {
-  margin-left: 1rem;
-  padding-left: 0.5rem;
+  margin-inline-start: 1rem;
+  padding-inline-start: 0.5rem;
 }
 
 /*image styles*/
@@ -261,11 +263,14 @@ ul, ol {
     
   }
   .header-content {
-    padding: 48px 16px 16px 16px;
+    padding-block: 48px 16px;
+    padding-inline: 16px;
   
   }
   .content {
-    padding: 0px 16px 64px 16px;
+    
+    padding-block: 0px 64px;
+    padding-inline: 16px;
   }
   .footer-images {
     /*flex-direction: column;*/
