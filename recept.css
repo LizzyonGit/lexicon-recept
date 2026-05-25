@@ -62,12 +62,14 @@ body {
   background-color: #FFFFFF;
   color:#000000;
   font-family: var(--primary-font);
-  max-width: 75%;
+  max-inline-size: 75%;
+  /*max-width: 75%;*/
   font-size: 1rem;
   font-weight: 400;
   /*display: flex;*/
   /*flex-direction: column;*/
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  min-block-size: 100vh;
   line-height: 1.5;
 }
 
@@ -201,17 +203,19 @@ ul, ol {
 
 /*image styles*/
 .header-image  {
-  min-height:300px;
+  /*min-height:300px;*/
+  min-block-size: 300px;
   
   img {
-    width: 100%;
+    /*width: 100%;*/
+    inline-size: 100%;
     object-fit: cover;
     border: 1px;
     /*background-image: url(pannkaka-head.jpg);
     background-color: aqua;
     background-size: cover;*/
     
-    min-height:300px;
+    min-block-size: 300px;
     display: block; /* Remove default inline spacing, small white line under*/
   }}
 
@@ -222,13 +226,13 @@ ul, ol {
 
   .image-wrapper {
     /*flex: 1;  */         /* Forces both items to take up equal width */
-    min-width: 0;      /* Crucial: allows the wrapper to shrink below image size */
+    min-inline-size: 0;      /* Crucial: allows the wrapper to shrink below image size */
   }
   
 
     img {
-      width: 100%;
-      height: auto;
+      inline-size: 100%;
+      block-size: auto;
       display: block;
       /*max-width: 49%;
       max-height: 516px;*/
@@ -258,7 +262,7 @@ ul, ol {
   
 
   body {
-    max-width: 100%;
+    max-inline-size: 100%;
     
     
   }
@@ -276,8 +280,8 @@ ul, ol {
     /*flex-direction: column;*/
 
     img {
-      max-width: 100%;
-      max-height: 516px;
+      max-inline-size: 100%;
+      max-block-size: 516px;
     }
   }
   /*.footer-images img {
