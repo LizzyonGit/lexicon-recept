@@ -126,6 +126,12 @@ section p {
     padding-block-end: 1rem;
 }
 
+/*logo styles*/
+.logo {
+  width: 50px;
+  height: auto;
+  display: block; /* Remove default inline spacing, small white line under*/
+}
 /*nav styles*/
 
 .navbar {
