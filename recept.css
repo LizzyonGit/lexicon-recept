@@ -148,8 +148,8 @@ section p {
 
 /*logo styles*/
 .logo {
-  min-inline-size: 40px;
-  max-inline-size: 60px;
+  min-inline-size: 60px;
+  max-inline-size: 80px;
   height: auto;
   display: block; /* Remove default inline spacing, small white line under*/
 }
