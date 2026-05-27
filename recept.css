@@ -65,6 +65,29 @@ h1, h2, h3, h4, h5, h6 {
   flex: 2;
 }
 
+
+/*grid*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  justify-items: safe start;
+  align-items: safe start;
+  padding: 48px; /*aligns with index.html padding content class*/
+}
+
+.card {
+  border: 1px solid black;
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+
+
 /*global styles*/
 /*html style*/
 html {
