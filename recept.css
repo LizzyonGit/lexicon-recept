@@ -70,11 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  justify-items: safe start;
-  align-items: safe start;
+  
   padding: 48px; /*aligns with index.html padding content class*/
 }
 
@@ -336,7 +334,7 @@ ul, ol {
     padding-inline: 16px;
   
   }
-  .content {
+  .content, .container {
     
     padding-block: 0px 64px;
     padding-inline: 16px;
@@ -349,6 +347,12 @@ ul, ol {
       max-block-size: 516px;
     }
   }
+
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+
   /*.footer-images img {
     
     max-width: 100%;
@@ -358,3 +362,4 @@ ul, ol {
 
 
 }
+
