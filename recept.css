@@ -72,25 +72,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /*grid*/
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
-  gap: 1rem;
-  
-  padding: 48px; /*aligns with index.html padding content class*/
-}
-
-.card {
-  border: 1px solid black;
-  border-radius: 8px;
-  overflow: hidden;
-  
-  display: grid;
-  grid-template-columns: 1fr;
-
-  a {
+.card-link {
     text-decoration: none;
     color: inherit;
+    display: grid;
+    block-size: 100%;
     
     &:focus,
     &:focus-visible,
@@ -99,8 +85,25 @@ h1, h2, h3, h4, h5, h6 {
       outline: 0;
     }
   }
-  
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
+  gap: 1rem;
+  
+  padding: 48px; /*aligns with index.html padding content class*/
+
+  section {
+    display: grid;
+    
+  }
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  
   h2 {
     font-size: 1rem;
   }
@@ -109,15 +112,19 @@ h1, h2, h3, h4, h5, h6 {
 .card-top {
   display: grid; 
   grid-template-columns: 1fr;
-
+  block-size: 300px;
+  
   img {
   object-fit: cover;
+  block-size: 300px;
   max-inline-size: 100%;
+  
  }
 }
 
 .card-content {
   padding: .5rem;
+  
 }
 
 /*global styles*/
