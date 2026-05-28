@@ -15,6 +15,10 @@
   
 }
 
+img {
+  display: block; /* Remove default inline spacing, small white line under*/
+}
+
 /* Improve line wrapping */
 p {
   text-wrap: pretty;
@@ -78,13 +82,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
   border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      background-color: var(--primary-color);
+      outline: 0;
+    }
+  }
+  
 
   h2 {
     font-size: 1rem;
   }
 }
 
+.card-top {
+  display: grid; 
+  grid-template-columns: 1fr;
 
+  img {
+  object-fit: cover;
+  max-inline-size: 100%;
+ }
+}
+
+.card-content {
+  padding: .5rem;
+}
 
 /*global styles*/
 /*html style*/
