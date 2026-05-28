@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
   gap: 1rem;
   
   padding: 48px; /*aligns with index.html padding content class*/
@@ -313,6 +313,7 @@ ul, ol {
     background-size: cover;*/
     
     min-block-size: 300px;
+    max-block-size: 400px;
     display: block; /* Remove default inline spacing, small white line under*/
   }}
 
@@ -382,7 +383,7 @@ ul, ol {
     }
   }
 
-  .container {
+  /*.container {
       grid-template-columns: 1fr;
   }
 
