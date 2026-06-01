@@ -116,8 +116,8 @@ h1, h2, h3, h4, h5, h6 {
   
   img {
   object-fit: cover;
-  block-size: 300px;
-  max-inline-size: 100%;
+  block-size: 300px; /*this is not good for tablet screens, need to fix*/
+  max-inline-size: 100%; /*ska till reset*/
   
  }
 }
