@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
   gap: 1rem;
   
   padding: 48px; /*aligns with index.html padding content class*/
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   
   img {
   object-fit: cover;
-  block-size: 300px; /*this is not good for tablet screens, need to fix*/
+  block-size: 300px;
   max-inline-size: 100%; /*ska till reset*/
   
  }
