@@ -3,6 +3,7 @@
     --primary-font: 'Open Sans', sans-serif;
     --primary-color: rgba(161, 0, 0, 0.3); /* pink */
     --secondary-color: #A10000; /* red */
+    --omoss-color: hsl(from var(--primary-color) calc(h + 10) s calc(l + 30));
 }
 
 
@@ -74,18 +75,23 @@ h1, h2, h3, h4, h5, h6 {
 .header-omoss {
   block-size: min(40vh, 300px);
   background-image: url(omoss.jpg);
-  background-color: black;
+  background-color: light-dark(black, grey);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
   h1 {
-    color:#FFFFFF;
+    color: var(--omoss-color);
+    background-color: contrast-color(var(--omoss-color));
     padding: 1rem;
   }
+
 }
 
 .omoss {
+  h2 {
+    color: var(--secondary-color);
+  }
   padding: 1rem;
 }
 
