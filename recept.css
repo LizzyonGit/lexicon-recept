@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); /*https://www.youtube.com/watch?v=OZ6qKoq7RJU, min 300 px or 100% whichever is smaller, max 1 fr*/
   gap: 1rem;
   
   padding: 48px; /*aligns with index.html padding content class*/
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   
   h2 {
-    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 2rem);
   }
 }
 
@@ -133,10 +133,11 @@ h1, h2, h3, h4, h5, h6 {
   display: grid; 
   grid-template-columns: 1fr;
   block-size: 300px;
+  overflow: clip;
   
   img {
   object-fit: cover;
-  block-size: 300px;
+  block-size: 100%;
   
   
  }
@@ -207,7 +208,7 @@ p.grey {
 /*h styles*/
 h1 {
     color: var(--secondary-color);
-    font-size: 1.8rem;
+    font-size: clamp(2rem, 1.5rem + 4vw, 2.5rem);
    
     
 }
@@ -218,7 +219,7 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 2rem);
    
     
 }
