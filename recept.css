@@ -4,6 +4,7 @@
     --primary-color: rgba(161, 0, 0, 0.3); /* pink */
     --secondary-color: #A10000; /* red */
     --omoss-color: hsl(from white 0 50 50);
+    color-scheme: light dark;
 }
 
 
