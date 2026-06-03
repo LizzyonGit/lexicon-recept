@@ -17,7 +17,7 @@
 
 img {
   display: block; /* Remove default inline spacing, small white line under*/
-}
+  max-inline-size: 100%;}
 
 /* Improve line wrapping */
 p {
@@ -69,6 +69,26 @@ h1, h2, h3, h4, h5, h6 {
   flex: 2;
 }
 
+/*om oss*/
+
+.header-omoss {
+  block-size: min(40vh, 300px);
+  background-image: url(omoss.jpg);
+  background-color: black;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    color:#FFFFFF;
+    padding: 1rem;
+  }
+}
+
+.omoss {
+  padding: 1rem;
+}
+
 
 /*grid*/
 
@@ -117,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   img {
   object-fit: cover;
   block-size: 300px;
-  max-inline-size: 100%; /*ska till reset*/
+  
   
  }
 }
@@ -145,6 +165,7 @@ body {
   color:#000000;
   font-family: var(--primary-font);
   max-inline-size: 75%;
+  min-inline-size: 75%;
   /*max-width: 75%;*/
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   font-weight: 400;
