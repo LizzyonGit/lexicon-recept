@@ -363,7 +363,7 @@ ul, ol {
 .header-omoss {
   block-size: min(40vh, 300px);
   background-image: url(omoss.jpg);
-  background-color: light-dark(#000000, hsl(from #000000 h s 50%));
+  background-color: light-dark(#000000, hsl(from #000000 h s 20%));
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
