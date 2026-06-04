@@ -3,7 +3,7 @@
     --primary-font: 'Open Sans', sans-serif;
     --primary-color: rgba(161, 0, 0, 0.3); /* pink */
     --secondary-color: #A10000; /* red */
-    --omoss-color: hsl(from white 0 50 50);
+    --omoss-color: hsl(from #ffff h 50% 50%);
     color-scheme: light dark;
 }
 
@@ -363,14 +363,14 @@ ul, ol {
 .header-omoss {
   block-size: min(40vh, 300px);
   background-image: url(omoss.jpg);
-  background-color: light-dark(black, grey);
+  background-color: light-dark(#000000, hsl(from #000000 h s 50%));
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
   h1 {
     color: var(--omoss-color);
-    background-color: hsl(from var(--omoss-color) 180 0 0  / 0.3);
+    background-color: hsl(from var(--omoss-color) 180 s l  / 0.3);
     padding-inline: 1rem;
     padding-block: 0;
   }
@@ -388,15 +388,26 @@ ul, ol {
 }
 
 /*form styles*/
+input, button, textarea {
+  font: inherit;
+  
+}
+
 
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  inline-size: 100%;
+  max-inline-size: 600px;
+
+
   gap: 1rem;
 
   button {
     inline-size: fit-content;
     padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 12px oklch(from var(--secondary-color) l c h / 0.5);
   }
 }
 
