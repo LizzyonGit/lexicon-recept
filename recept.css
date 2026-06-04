@@ -3,7 +3,7 @@
     --primary-font: 'Open Sans', sans-serif;
     --primary-color: rgba(161, 0, 0, 0.3); /* pink */
     --secondary-color: #A10000; /* red */
-    --omoss-color: hsl(from #ffff h 50% 50%);
+    --omoss-color: oklch(from var(--secondary-color) 50% c h);
     color-scheme: light dark;
 }
 
@@ -370,7 +370,7 @@ ul, ol {
 
   h1 {
     color: var(--omoss-color);
-    background-color: hsl(from var(--omoss-color) 180 s l  / 0.3);
+    background-color: hsl(from var(--omoss-color) h s l  / 0.2);
     padding-inline: 1rem;
     padding-block: 0;
   }
@@ -410,6 +410,11 @@ form {
     border-radius: 0.5rem;
     box-shadow: 0 12px 12px oklch(from var(--secondary-color) l c h / 0.5);
   }
+}
+
+.form-group {
+  display: grid;
+  
 }
 
 /* media queries */
