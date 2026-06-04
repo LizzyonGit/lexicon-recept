@@ -390,6 +390,7 @@ ul, ol {
 /*form styles*/
 input, button, textarea {
   font: inherit;
+  padding: 0.5rem;
   
 }
 
