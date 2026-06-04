@@ -3,7 +3,7 @@
     --primary-font: 'Open Sans', sans-serif;
     --primary-color: rgba(161, 0, 0, 0.3); /* pink */
     --secondary-color: #A10000; /* red */
-    --omoss-color: oklch(from var(--secondary-color) 50% c h);
+    --omoss-color: oklch(from var(--secondary-color) 98% c h);
     color-scheme: light dark;
 }
 
@@ -370,7 +370,7 @@ ul, ol {
 
   h1 {
     color: var(--omoss-color);
-    background-color: hsl(from var(--omoss-color) h s l  / 0.2);
+    background-color: hsl(from var(--omoss-color) h s l  / 0.1);
     padding-inline: 1rem;
     padding-block: 0;
   }
